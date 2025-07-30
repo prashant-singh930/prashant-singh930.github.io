@@ -69,7 +69,7 @@ function showCartToast(msg) {
 }
 
 function empty() {
-  document.getElementById("contactForm").innerHTML.value()= "";
+  document.getElementById("contactForm").innerHTML = "";
 }
 
 // Contact form handler and cart modal events
