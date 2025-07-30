@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a8521956f6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>
+          <i class="fa-brands fa-instagram"></i>
+          <a class="insta" href="https://www.instagram.com/everything.habibi/"
+            >Everything Habibi</a
+          >
+        </h1>
+        <br />
+        <h1>GameStore</h1>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#games">Games</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <button
+                id="cartBtn"
+                class="btn"
+                style="padding: 6px 18px; font-size: 1rem"
+              >
+                Cart (<span id="cartCount">0</span>)
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h2>Discover & Buy the Best PC Games</h2>
+          <p>Browse our collection of top-rated games and exclusive deals!</p>
+          <a href="#games" class="btn">Shop Now</a>
+        </div>
+      </section>
+      <section id="games" class="games-section">
+        <div class="container">
+          <h2>Featured Games</h2>
+          <div class="games-grid">
+            <div class="game-card">
+              <img
+                src="https://images.igdb.com/igdb/image/upload/t_cover_big/co1r7f.webp"
+                alt="The last of us"
+              />
+              <h3>The last of us</h3>
+              <p>Shooter, Adventure | &#8377;200</p>
+              <button onclick="addToCart('The last of us', 200)">
+                Add to Cart
+              </button>
+            </div>
+            <div class="game-card">
+              <img
+                src="https://images.igdb.com/igdb/image/upload/t_cover_big/co1wyy.webp"
+                alt="The Witcher 3: Wild Hunt"
+              />
+              <h3>The Witcher 3: Wild Hunt</h3>
+              <p>Role-playing (RPG), Adventure | &#8377;200</p>
+              <button onclick="addToCart('The Witcher 3: Wild Hunt', 200)">
+                Add to Cart
+              </button>
+            </div>
+            <div class="game-card">
+              <img
+                src="https://images.igdb.com/igdb/image/upload/t_cover_big/co1tmu.png"
+                alt="God of War"
+              />
+              <h3>God of War</h3>
+              <p>Adventure | &#8377;200</p>
+              <button onclick="addToCart('God of War', 200)">
+                Add to Cart
+              </button>
+            </div>
+
+            <div class="game-card">
+              <img
+                src="https://images.igdb.com/igdb/image/upload/t_cover_big/co87cu.webp"
+                alt="Assassin's Creed Shadows"
+              />
+              <h3>Assassin's Creed Shadows</h3>
+              <p>Role-playing (RPG), Adventure | &#8377;220</p>
+              <button onclick="addToCart('Assassin Creed Shadows', 220)">
+                Add to Cart
+              </button>
+            </div>
+
+            <div class="game-card">
+              <img
+                src="https://images.igdb.com/igdb/image/upload/t_cover_big/co9s2c.webp"
+                alt="Mafia: The Old Country"
+              />
+              <h3>Mafia: The Old Country</h3>
+              <p>Shooter, Adventure | &#8377;250</p>
+              <button onclick="addToCart('Mafia: The Old Country', 250)">
+                Add to Cart
+              </button>
+            </div>
+
+            <div class="game-card">
+              <img
+                src="https://images.igdb.com/igdb/image/upload/t_cover_big/co9xif.webp"
+                alt="Wuchang: Fallen Feathers"
+              />
+              <h3>Wuchang: Fallen Feathers</h3>
+              <p>Adventure | &#8377;250</p>
+              <button onclick="addToCart('Wuchang: Fallen Feathers', 250)">
+                Add to Cart
+              </button>
+            </div>
+
+            <div class="game-card">
+              <img
+                src="https://images.igdb.com/igdb/image/upload/t_cover_big/co79vq.webp"
+                alt="Marvel's Spider-Man 2"
+              />
+              <h3>Marvel's Spider-Man 2</h3>
+              <p>Hack and slash/Beat 'em up, Adventure | &#8377;250</p>
+              <button onclick="addToCart('Marvel Spider-Man 2', 250)">
+                Add to Cart
+              </button>
+            </div>
+            <div class="game-card">
+              <img
+                src="https://images.igdb.com/igdb/image/upload/t_cover_big/co9751.webp"
+                alt="Grand Theft Auto V"
+              />
+              <h3>Grand Theft Auto V</h3>
+              <p>offline only | &#8377;200</p>
+              <button onclick="addToCart('Grand Theft Auto V', 200)">
+                Add to Cart
+              </button>
+            </div>
+            <div class="game-card">
+              <img
+                src="https://images.igdb.com/igdb/image/upload/t_cover_big/co2a23.webp"
+                alt="Sekiro: Shadows Die Twice"
+              />
+              <h3>Sekiro: Shadows Die Twice</h3>
+              <p>Action-Adventure | &#8377;200</p>
+              <button onclick="addToCart('Sekiro: Shadows Die Twice', 150)">
+                Add to Cart
+              </button>
+            </div>
+            <div class="game-card">
+              <img
+                src="https://images.igdb.com/igdb/image/upload/t_cover_big/co7lbb.webp"
+                alt="Tekken 8"
+              />
+              <h3>Tekken 8</h3>
+              <p>Fighting | &#8377;200</p>
+              <button onclick="addToCart('Tekken 8', 150)">Add to Cart</button>
+            </div>
+            <div class="game-card">
+              <img
+                src="https://images.igdb.com/igdb/image/upload/t_cover_big/co4jni.webp"
+                alt="Elden Ring"
+              />
+              <h3>Elden Ring</h3>
+              <p>Action RPG | &#8377;200</p>
+              <button onclick="addToCart('Elden Ring', 150)">
+                Add to Cart
+              </button>
+            </div>
+
+            <div class="game-card">
+              <img
+                src="https://images.igdb.com/igdb/image/upload/t_cover_big/co1wkl.webp"
+                alt="Call of Duty: Black Ops"
+              />
+              <h3>Call of Duty: Black Ops</h3>
+              <p>First-person shooter | &#8377;200</p>
+              <button onclick="addToCart('Call of Duty: Black Ops', 200)">
+                Add to Cart
+              </button>
+            </div>
+            <div class="game-card">
+              <img
+                src="https://images.igdb.com/igdb/image/upload/t_cover_big/co3cwt.webp"
+                alt="Call of Duty: Modern Warfare 2"
+              />
+              <h3>Call of Duty: Modern Warfare 2</h3>
+              <p>First-person shooter | &#8377;200</p>
+              <button
+                onclick="addToCart('Call of Duty: Modern Warfare 2', 200)"
+              >
+                Add to Cart
+              </button>
+            </div>
+            <div class="game-card">
+              <img
+                src="https://images.igdb.com/igdb/image/upload/t_cover_big/co5ziw.webp"
+                alt="The Last of Us Part II"
+              />
+              <h3>The Last of Us Part II</h3>
+              <p>Action-Adventure | &#8377;200</p>
+              <button onclick="addToCart('The Last of Us Part II', 200)">
+                Add to Cart
+              </button>
+            </div>
+            <div class="game-card">
+              <img
+                src="https://images.igdb.com/igdb/image/upload/t_cover_big/co4eiw.webp"
+                alt="Uncharted 4: A Thief's End - Remastered"
+              />
+              <h3>Uncharted 4: A Thief's End - Remastered</h3>
+              <p>Adventure | &#8377;200</p>
+              <button
+                onclick="addToCart('Uncharted 4: A Thief End - Remastered', 200)"
+              >
+                Add to Cart
+              </button>
+            </div>
+
+            <div class="game-card">
+              <img
+                src="https://images.igdb.com/igdb/image/upload/t_cover_big/co8h3y.webp"
+                alt="Black Myth: Wukong"
+              />
+              <h3>Black Myth: Wukong</h3>
+              <p>Action RPG | &#8377;200</p>
+              <button onclick="addToCart('Black Myth: Wukong', 200)">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="about-section">
+        <div class="container">
+          <h2>About Us</h2>
+          <p>
+            GameStore is your one-stop shop for the latest and greatest PC
+            games. We offer secure payments, instant delivery, and top-notch
+            customer support.
+          </p>
+          <br />
+          <p>
+            This website is handled by ,
+            <i class="fa-brands fa-instagram"></i>
+            <a class="insta" href="https://www.instagram.com/everything.habibi/"
+              >Everything.habibi</a
+            >
+          </p>
+        </div>
+      </section>
+      <section id="contact" class="contact-section">
+        <div class="container">
+          <h2>Contact</h2>
+          <form id="contactForm" action="https://formspree.io/f/xqkrqzqg" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- Cart Modal -->
+    <div id="cartModal" class="cart-modal" style="display: none">
+      <div class="cart-modal-content">
+        <span class="close" id="closeCart">&times;</span>
+        <h2>Your Cart</h2>
+        <div id="cartItems"></div>
+        <div id="cartTotal" style="margin: 15px 0"></div>
+        <button id="clearCartBtn" class="btn" style="background: #ff4d4d">
+          Clear Cart
+        </button>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 GameStore. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
