@@ -51,6 +51,40 @@ header h1 {
   margin-bottom: 18px;
 }
 
+.privacy-section h2,
+.terms-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 0;
+}
+.privacy-section h3,
+.terms-section h3 {
+  color: #00bfff;
+  margin-top: 32px;
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.privacy-section ul,
+.terms-section ul {
+  color: #b0b0b0;
+  margin-left: 1.2em;
+  margin-bottom: 18px;
+  padding-left: 1.2em;
+  font-size: 1.05rem;
+}
+.privacy-section ul li,
+.terms-section ul li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+.privacy-section hr,
+.terms-section hr {
+  border: none;
+  border-top: 1.5px solid #333;
+  margin: 30px 0 30px 0;
+}
+
 footer {
   background: #23272a;
   color: #b0b0b0;
