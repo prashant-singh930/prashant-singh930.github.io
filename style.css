@@ -272,3 +272,14 @@ footer {
 .insta:hover {
   color: #009acd;
 }
+
+.link {
+  color: #00bfff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: #009acd;
+}
