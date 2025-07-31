@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #181a1b;
+  color: #f3f3f3;
+}
+
+header {
+  background: #23272a;
+  padding: 20px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  color: #00bfff;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.privacy-section,
+.terms-section {
+  padding: 40px 0;
+  background: #202225;
+  margin-top: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+.privacy-section h2,
+.terms-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #00bfff;
+}
+.privacy-section p,
+.terms-section p {
+  color: #b0b0b0;
+  font-size: 1.08rem;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+footer {
+  background: #23272a;
+  color: #b0b0b0;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+footer a {
+  color: #00bfff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+footer a:hover {
+  color: #009acd;
+}
+
+@media (max-width: 700px) {
+  header .container,
+  .container {
+    padding: 0 10px;
+  }
+  .privacy-section,
+  .terms-section {
+    margin-top: 15px;
+    padding: 20px 0;
+  }
+  header h1 {
+    font-size: 1.4rem;
+  }
+}
