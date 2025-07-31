@@ -22,10 +22,17 @@ function updateCartCount() {
 function renderCart() {
   const cartItems = document.getElementById("cartItems");
   const cartTotal = document.getElementById("cartTotal");
+  const imButton = document.querySelector('a[rel="im-checkout"]');
   if (!cartItems || !cartTotal) return;
   if (cart.length === 0) {
     cartItems.innerHTML = "<p>Your cart is empty.</p>";
     cartTotal.textContent = "";
+    // Disable Instamojo button if cart is empty
+    if (imButton) {
+      imButton.style.pointerEvents = "none";
+      imButton.style.opacity = "0.5";
+      imButton.setAttribute("data-text", "Add items to cart");
+    }
     return;
   }
   let html = "";
@@ -40,6 +47,12 @@ function renderCart() {
   });
   cartItems.innerHTML = html;
   cartTotal.textContent = `Total: ₹${total.toFixed(2)}`;
+  // Enable Instamojo button and update label with total
+  if (imButton) {
+    imButton.style.pointerEvents = "auto";
+    imButton.style.opacity = "1";
+    imButton.setAttribute("data-text", `Pay ₹${total.toFixed(2)}`);
+  }
 }
 
 function removeFromCart(idx) {
