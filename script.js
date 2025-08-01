@@ -81,12 +81,6 @@ function showCartToast(msg) {
   alert(msg);
 }
 
-function empty() {
-  document.querySelectorAll(".empty").forEach((el) => {
-    el.value = "";
-  });
-}
-
 // Contact form handler and cart modal events
 document.addEventListener("DOMContentLoaded", function () {
   // Contact form (no JS handler, handled by Formspree)
