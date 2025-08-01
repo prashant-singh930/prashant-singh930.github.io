@@ -286,6 +286,7 @@ footer {
 
 .contact-info {
   color: #b0b0b0;
+  display: flex;
   text-align: center;
   margin-top: 20px;
 }
