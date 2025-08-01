@@ -283,3 +283,9 @@ footer {
 .link:hover {
   color: #009acd;
 }
+
+.contact-info {
+  color: #b0b0b0;
+  text-align: center;
+  margin-top: 20px;
+}
