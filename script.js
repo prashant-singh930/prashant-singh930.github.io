@@ -82,7 +82,7 @@ function showCartToast(msg) {
 }
 
 function empty() {
-  document.getElementById("contactForm").innerHTML = "";
+  document.getElementById("contactForm"). = "";
 }
 
 // Contact form handler and cart modal events
