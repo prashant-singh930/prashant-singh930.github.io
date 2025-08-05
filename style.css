@@ -289,3 +289,17 @@ footer {
   text-align: center;
   margin-top: 20px;
 }
+
+.Profile {
+  background: #9d3c15;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  &:hover {
+    background: #00bfff;
+  }
+}
