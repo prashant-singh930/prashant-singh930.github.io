@@ -97,4 +97,17 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   if (clearCartBtn) clearCartBtn.addEventListener("click", clearCart);
   updateCartCount();
+
+  // Animate fade-in sections on scroll
+  const fadeSections = document.querySelectorAll(".fade-section, .fade-in");
+  function handleFadeIn() {
+    fadeSections.forEach((section) => {
+      const rect = section.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 60) {
+        section.classList.add("visible");
+      }
+    });
+  }
+  handleFadeIn();
+  window.addEventListener("scroll", handleFadeIn);
 });
