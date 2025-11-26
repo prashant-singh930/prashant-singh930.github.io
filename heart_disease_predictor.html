@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Heart Disease Prediction Model</title>
 
-    
     <script src="https://cdn.tailwindcss.com"></script>
 
-    
     <script
       src="https://unpkg.com/react@18/umd/react.development.js"
       crossorigin
@@ -18,7 +16,6 @@
       crossorigin
     ></script>
 
-    
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
     <style>
@@ -41,7 +38,6 @@
         }
       }
 
-      
       input[type="range"] {
         -webkit-appearance: none;
         -moz-appearance: none;
@@ -54,7 +50,7 @@
       input[type="range"]:focus {
         outline: none;
       }
-      
+
       input[type="number"]::-webkit-inner-spin-button,
       input[type="number"]::-webkit-outer-spin-button {
         -webkit-appearance: none;
@@ -68,7 +64,6 @@
     <script type="text/babel">
       const { useState, useEffect } = React;
 
-      
       const IconBase = ({
         size = 24,
         className = "",
@@ -140,9 +135,7 @@
         </IconBase>
       );
 
-      
       const calculateRiskScore = (rawData) => {
-        
         const safeNum = (val) => {
           const parsed = Number(val);
           return isNaN(parsed) ? 0 : parsed;
@@ -180,7 +173,6 @@
           score -= 0.5;
         }
 
-        // 4. Resting BP
         score += (data.trestbps - 120) * 0.01;
         if (data.trestbps > 140) riskFactors.push("High Blood Pressure");
 
@@ -269,7 +261,6 @@
                 min={min}
                 max={max}
                 step={step || 1}
-                
                 value={Number(value) || min || 0}
                 onChange={(e) => onChange(e.target.value)}
                 className="flex-1 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-600"
@@ -279,7 +270,6 @@
                 min={min}
                 max={max}
                 step={step || "any"}
-                
                 value={value}
                 onChange={(e) => onChange(e.target.value)}
                 className="w-20 p-2 text-right border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-sm font-medium"
